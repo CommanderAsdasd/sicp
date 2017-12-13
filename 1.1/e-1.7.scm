@@ -64,6 +64,8 @@
 (define (sqrt-delta x)
   (square-iter-delta 1.0 x))
 
+(display (sqrt-delta 10))
+
 ; (display (sqrt-delta 1234567898765432101010101010))
 ; (display (sqrt-delta 0.0006))
 ; (newline)
