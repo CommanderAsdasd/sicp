@@ -16,3 +16,9 @@
 
 (define (>= x y)
     (or (> x y) (= x y)))
+
+; Newton square roots finder by interactive guessing
+(define (square-iter guess x)
+    (if (good-enough? guess x)
+        guess
+        (square-iter (improve guess x) x)))
